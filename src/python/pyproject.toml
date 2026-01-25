@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdqc-research"
+version = "0.1.0"
+description = "Research utilities for multidimensional quantum communication."
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+  "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+umap = ["umap-learn>=0.5.5"]
+gpu = ["cuml-cu12>=24.10", "cupy-cuda12x>=12.0"]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]

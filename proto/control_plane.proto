@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package mdqc.controlplane.v1;
+
+message StatusRequest {}
+
+message StatusResponse {
+  string service = 1;
+  string version = 2;
+  int64 uptime_seconds = 3;
+  string timestamp = 4;
+}
+
+message LinksRequest {}
+
+message Link {
+  string id = 1;
+  string state = 2;
+  double qber = 3;
+  double skr_kbps = 4;
+  double attenuation_db = 5;
+  double latency_ms = 6;
+  double jitter_ms = 7;
+}
+
+message LinksResponse {
+  repeated Link links = 1;
+}
+
+message MetricsRequest {}
+
+message Metric {
+  string name = 1;
+  double value = 2;
+  string unit = 3;
+}
+
+message MetricsResponse {
+  repeated Metric metrics = 1;
+}
+
+service ControlPlane {
+  rpc GetStatus(StatusRequest) returns (StatusResponse);
+  rpc ListLinks(LinksRequest) returns (LinksResponse);
+  rpc ListMetrics(MetricsRequest) returns (MetricsResponse);
+}

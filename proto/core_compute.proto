@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package mdqc.core.v1;
+
+option go_package = "github.com/peterz/multidimensional-transformation/control-plane/internal/corepb;corepb";
+
+message CosineSimilarityRequest {
+  repeated double a = 1;
+  repeated double b = 2;
+}
+
+message CosineSimilarityResponse {
+  double value = 1;
+}
+
+service CoreCompute {
+  rpc CosineSimilarity(CosineSimilarityRequest) returns (CosineSimilarityResponse);
+}

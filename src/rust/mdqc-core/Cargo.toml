@@ -1,0 +1,10 @@
+[package]
+name = "mdqc-core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Core compute and cryptographic primitives for MDQC."
+
+[dependencies]
+hkdf = "0.12"
+sha2 = "0.10"
