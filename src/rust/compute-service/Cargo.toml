@@ -1,0 +1,15 @@
+[package]
+name = "mdqc-compute-service"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "gRPC compute service for MDQC core metrics."
+
+[dependencies]
+mdqc-core = { path = "../mdqc-core" }
+prost = "0.12"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tonic = "0.11"
+
+[build-dependencies]
+tonic-build = "0.11"
