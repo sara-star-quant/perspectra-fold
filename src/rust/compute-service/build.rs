@@ -5,9 +5,6 @@ fn main() {
     tonic_build::configure()
         .build_server(true)
         .build_client(false)
-        .compile(
-            &["../../../proto/core_compute.proto"],
-            &["../../../proto"],
-        )
+        .compile(&["../../../proto/core_compute.proto"], &["../../../proto"])
         .expect("failed to compile proto");
 }

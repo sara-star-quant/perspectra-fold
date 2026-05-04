@@ -29,7 +29,9 @@ impl CoreCompute for CoreComputeService {
 
         let value = cosine_similarity(&payload.a, &payload.b).map_err(|err| match err {
             ComputeError::EmptyVector => Status::invalid_argument("vectors must be non-empty"),
-            ComputeError::MismatchedLength => Status::invalid_argument("vectors must have equal length"),
+            ComputeError::MismatchedLength => {
+                Status::invalid_argument("vectors must have equal length")
+            }
             ComputeError::ZeroNorm => Status::failed_precondition("zero-norm vector"),
         })?;
 
@@ -43,7 +45,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .unwrap_or_else(|_| "0.0.0.0:50051".to_string())
         .parse()?;
 
-    let service = CoreComputeService::default();
+    let service = CoreComputeService;
 
     println!("mdqc-core compute service listening on {}", addr);
 
