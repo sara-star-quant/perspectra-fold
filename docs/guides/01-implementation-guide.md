@@ -208,6 +208,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
    - Establish monitoring
 
 2. **Validation Testing**
+
    | Test | Target |
    |------|--------|
    | QKD key rate | >10 kbps |
