@@ -2,8 +2,15 @@
 
 > High-dimensional quantum and hybrid quantum-classical communication systems.
 
-[![CI](https://github.com/sarastarquant/perspectra-fold/actions/workflows/ci.yml/badge.svg)](https://github.com/sarastarquant/perspectra-fold/actions/workflows/ci.yml)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![CI](https://github.com/sara-star-quant/perspectra-fold/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sara-star-quant/perspectra-fold/actions/workflows/ci.yml)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![Security Policy](https://img.shields.io/badge/security-policy-blue.svg)](SECURITY.md)
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB.svg?logo=python&logoColor=white)](src/python)
+[![Rust](https://img.shields.io/badge/Rust-stable-DEA584.svg?logo=rust&logoColor=white)](src/rust)
+[![Go](https://img.shields.io/badge/Go-1.22+-00ADD8.svg?logo=go&logoColor=white)](src/go)
+[![PQC: FIPS 203/204/205](https://img.shields.io/badge/PQC-FIPS%20203%2F204%2F205-1f6feb.svg)](docs/standards/01-standards-overview.md)
+[![QKD: ETSI GS QKD](https://img.shields.io/badge/QKD-ETSI%20GS%20QKD-1f6feb.svg)](docs/standards/01-standards-overview.md)
 
 ## Overview
 
@@ -25,7 +32,7 @@ Perspectra Fold provides research findings, architecture documentation, and prod
 
 ## Project Structure
 
-```
+```text
 .
 ├── src/                          # Implementation code
 │   ├── python/                   # Research utilities (metrics, dimensionality reduction)
@@ -95,7 +102,7 @@ PFOLD_CONTROL_ADDR=:8080 PFOLD_CORE_ADDR=127.0.0.1:50051 go run ./cmd/control-pl
 
 ### Security Model
 
-```
+```text
 ┌─────────────────────────────────────────┐
 │     DEFENSE-IN-DEPTH SECURITY           │
 ├─────────────────────────────────────────┤
@@ -110,7 +117,7 @@ PFOLD_CONTROL_ADDR=:8080 PFOLD_CORE_ADDR=127.0.0.1:50051 go run ./cmd/control-pl
 
 ### Dimensional Encoding
 
-```
+```text
 Input Dimension → Encoding Decision:
 
 D ≤ 8      → Direct quantum encoding (optimal)
