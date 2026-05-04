@@ -122,8 +122,9 @@ jobs:
           go-version: "1.22"
 
       - name: Integration test
+        working-directory: src/go/control-plane
         run: |
-          go test -tags=integration ./src/go/control-plane/internal/coreclient -run TestCosineSimilarityGRPC
+          go test -tags=integration ./internal/coreclient -run TestCosineSimilarityGRPC
 
   docs:
     runs-on: ubuntu-latest
