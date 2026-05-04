@@ -119,6 +119,7 @@ For dimension d (prime power), there exist d+1 MUBs:
 Standard REST API for key delivery between QKD systems and applications.
 
 **Key Endpoints:**
+
 | Operation | Endpoint | Method |
 |-----------|----------|--------|
 | Get Keys | `/api/v1/keys/{SAE_ID}/enc_keys` | GET |
@@ -130,6 +131,7 @@ Standard REST API for key delivery between QKD systems and applications.
 SDN control interface for QKD network management.
 
 **Key Operations:**
+
 | Operation | Endpoint | Method |
 |-----------|----------|--------|
 | Get Status | `/api/v1/status` | GET |
