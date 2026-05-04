@@ -32,16 +32,19 @@ This is a public synthesis and omits internal experiments or proprietary dataset
 #### 1.1.2 Recent Breakthroughs (2024-2025)
 
 **NTT Research (May 2025):**
+
 - Demonstrated qudit-based fusion gates exceeding theoretical limits
 - Achieved ~10× higher capacity than conventional protocols
 - Published in Physical Review Letters
 
 **Griffith University (May 2025):**
+
 - >99% fidelity for high-dimensional state generation and measurement
 - Scalable beyond 2D systems
 - Published in Physical Review Letters
 
 **20-Dimensional Qudit Distribution:**
+
 - Fidelity improvement: 0.5 (qubits) → 0.94 (20D qudits)
 - Robust under noisy channel conditions
 - [IET Quantum Communication 2025]
@@ -59,11 +62,13 @@ This is a public synthesis and omits internal experiments or proprietary dataset
 | Key Rate Enhancement (4D vs 2D) | 69% | [Phys Rev Applied 2019] |
 
 **Advantages:**
+
 - Highest dimensional capacity
 - Compatible with free-space and specialized fiber
 - Well-established theoretical framework
 
 **Challenges:**
+
 - Susceptible to atmospheric turbulence
 - Requires specialized optical components
 - Mode coupling in fiber transmission
@@ -78,11 +83,13 @@ This is a public synthesis and omits internal experiments or proprietary dataset
 | Demonstrated Distance | 52 km | Deployed multicore fiber |
 
 **Advantages:**
+
 - Compatible with existing telecom fiber
 - Robust against polarization drift
 - Simpler detection schemes
 
 **Challenges:**
+
 - Limited dimension scaling
 - Requires precise timing
 - Dispersion management
@@ -97,11 +104,13 @@ This is a public synthesis and omits internal experiments or proprietary dataset
 | Classical Coexistence | Proven | 110.8 Tb/s demonstrated |
 
 **Advantages:**
+
 - Natural parallelism
 - Proven classical coexistence
 - Compatible with existing deployment practices
 
 **Challenges:**
+
 - New fiber infrastructure required
 - Limited dimensional scaling
 - Higher cost per link
@@ -115,10 +124,12 @@ This is a public synthesis and omits internal experiments or proprietary dataset
 | Demonstrated | Research phase | Lab environments |
 
 **Advantages:**
+
 - Highest practical dimension
 - Combines benefits of both schemes
 
 **Challenges:**
+
 - Synchronization complexity
 - Higher error rates
 - Limited field deployment experience
@@ -135,6 +146,7 @@ This is a public synthesis and omits internal experiments or proprietary dataset
 | Tensor CP | Excellent | O(n·r·d) | Structure-dependent |
 
 **UMAP Findings:**
+
 - UCI Shuttle dataset (43,500 samples, 8D): Embedded in 44 seconds
 - Based on Riemannian geometry and algebraic topology
 - Preserves both local and global structure
@@ -143,12 +155,14 @@ This is a public synthesis and omits internal experiments or proprietary dataset
 #### 1.3.2 Quantum Dimensionality Reduction
 
 **Quantum Resonant Dimensionality Reduction (QRDR):**
+
 - Polylogarithmic time complexity
 - Error dependency: O(1/ε) vs O(1/ε³) for classical
 - Preserves effective information during reduction
 - [Physical Review Research 2025]
 
 **Quantum PCA (QPCA):**
+
 - Exponential speedup for low-rank matrices
 - Requires quantum phase estimation
 - High quantum resource requirements
@@ -159,12 +173,14 @@ This is a public synthesis and omits internal experiments or proprietary dataset
 #### 1.4.1 Coexistence Demonstrations
 
 **Nature Light: Science & Applications (2025):**
+
 - First demonstration of QKD + 110.8 Tb/s classical traffic
 - 25.2 km uncoupled-core multicore fiber
 - C-band coexistence achieved
 - Secure key establishment in dedicated core
 
 **Germany Twin-Field QKD (2025):**
+
 - 254 km commercial fiber
 - Standard telecommunications equipment
 - Published in Nature
@@ -191,7 +207,7 @@ This is a public synthesis and omits internal experiments or proprietary dataset
 
 #### 1.5.2 Signal Loss Comparison
 
-```
+```text
 Fiber: Loss ∝ exp(-αL)   → Exponential decay
 Satellite: Loss ∝ 1/L²   → Quadratic decay (beam divergence)
 
@@ -203,6 +219,7 @@ At 1000km:
 #### 1.5.3 MDQC Applicability to Long-Haul Satellite Experiments
 
 MDQC can serve as a control-plane and interoperability layer for long-haul satellite QKD experiments (for example, China-South Africa 12,900 km microsatellite links). Compatibility targets include:
+
 - ETSI-aligned key delivery interfaces that remain stable as hardware evolves.
 - Standardized link telemetry (attenuation, latency, jitter) for adaptive routing.
 - Offline-first control plane operations for intermittent satellite passes.
@@ -216,7 +233,7 @@ MDQC can serve as a control-plane and interoperability layer for long-haul satel
 
 #### 2.1.1 Trade-off Analysis
 
-```
+```text
 ┌────────────────────────────────────────────────────────────────────┐
 │                  DIMENSION SELECTION TRADE-OFFS                    │
 ├────────────────────────────────────────────────────────────────────┤
@@ -247,7 +264,7 @@ MDQC can serve as a control-plane and interoperability layer for long-haul satel
 
 #### 2.2.1 Decision Framework
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────┐
 │              DIMENSIONALITY HANDLING DECISION TREE              │
 ├─────────────────────────────────────────────────────────────────┤
@@ -301,7 +318,7 @@ MDQC can serve as a control-plane and interoperability layer for long-haul satel
 
 For d-dimensional QKD with observed QBER e:
 
-```
+```text
 Secure Key Rate = n × [log₂(d) × (1 - H_d(e)/(log₂d)) - leak]
 
 Where:
@@ -355,16 +372,19 @@ Example (d=8, e=5%):
 ### 3.3 Recommended Approach
 
 **Short-term (0-2 years):**
+
 - Deploy 4D time-bin QKD with PQC fallback
 - Use UMAP for 8D+ data reduction
 - Implement ETSI-compliant interfaces
 
 **Medium-term (2-4 years):**
+
 - Upgrade to 8D systems as hardware matures
 - Integrate SDN orchestration
 - Pursue certifications (FIPS, ISO 27001)
 
 **Long-term (4+ years):**
+
 - Satellite-fiber hybrid for global reach
 - Higher-dimensional OAM systems
 - Full crypto-agile infrastructure
@@ -396,6 +416,7 @@ Example (d=8, e=5%):
 ---
 
 **Document Control:**
+
 - Author: Research Team
 - Reviewed by: [Pending]
 - Approved by: [Pending]
