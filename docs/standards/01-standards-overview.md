@@ -72,7 +72,7 @@ This document provides a comprehensive overview of applicable standards, protoco
 
 ### 2.1 Protocol Stack Overview
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────┐
 │                    HD-QKD PROTOCOL STACK                        │
 ├─────────────────────────────────────────────────────────────────┤
@@ -172,6 +172,7 @@ PFOLD-CP = MDQC Compliance Program milestone.
 **Target:** EAL4+ (augmented)
 
 **Relevant Protection Profiles:**
+
 - PP_ND_V2.2e - Network Device
 - CPP_FW_V2.0e - Firewall
 - PP_APP_V1.3 - Application Software

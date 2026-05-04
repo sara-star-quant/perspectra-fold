@@ -52,7 +52,7 @@ Zero Trust Architecture (ZTA) and Zero Trust Environment (ZTE) guidance is defin
 
 ### 1.3 Recommended Stack for High-Dimensional Qudits
 
-```
+```text
 ┌─────────────────────────────────────────────────────────┐
 │  Application Layer: Python + Qiskit/PennyLane           │
 ├─────────────────────────────────────────────────────────┤
@@ -65,6 +65,7 @@ Zero Trust Architecture (ZTA) and Zero Trust Environment (ZTE) guidance is defin
 ```
 
 **Key Libraries:**
+
 - `qutip` - Quantum state manipulation (supports arbitrary dimensions)
 - `numpy` / `scipy` - Numerical computing foundation
 - `numba` - JIT compilation for Python hot paths
@@ -104,6 +105,7 @@ opt-einsum>=3.3.0         # Optimized tensor contractions
 ```
 
 **For 8D → 4D Transformation:**
+
 ```python
 from cuml.manifold import UMAP
 import cupy as cp
@@ -138,7 +140,7 @@ def reduce_8d_to_4d(data_8d: cp.ndarray) -> cp.ndarray:
 
 ### 3.2 Recommended Open Source Stack
 
-```
+```text
 ┌─────────────────────────────────────────────────────────┐
 │  QKD Application Interface                              │
 │  ├── Go control plane (gRPC)                            │
@@ -243,7 +245,7 @@ impl HybridKEM {
 
 ### 5.3 Recommended Network Stack
 
-```
+```text
 ┌─────────────────────────────────────────────────────────┐
 │  Application: gRPC + Protocol Buffers                   │
 ├─────────────────────────────────────────────────────────┤
@@ -263,7 +265,8 @@ impl HybridKEM {
 
 Condition-aware routing can reduce errors by selecting paths with lower QBER, higher key rates, and more stable environmental conditions. The control plane should ingest telemetry and compute paths using multi-criteria scoring.
 
-**Routing inputs**
+### Routing inputs
+
 | Signal | Source | Use |
 |--------|--------|-----|
 | QBER | QKD link telemetry | Avoid noisy links and unstable periods |
@@ -272,13 +275,15 @@ Condition-aware routing can reduce errors by selecting paths with lower QBER, hi
 | Latency / jitter | Transport metrics | Bound control-plane timing |
 | Weather / turbulence | Free-space sensors | Avoid high-scintillation paths |
 
-**Path selection strategies**
+### Path selection strategies
+
 - Multi-criteria shortest path (weighted Dijkstra) with QBER and SKR constraints.
 - Policy-based routing per application sensitivity (security vs latency vs availability).
 - Dynamic reweighting during known thermal or atmospheric shifts.
 - Multi-path routing with failover to PQC-only or classical-only modes when thresholds trip.
 
-**Scalability model**
+### Scalability model
+
 - Hierarchical domains (regional controllers) with aggregated telemetry.
 - Local path computation to reduce global state churn.
 - Periodic snapshots plus fast local overrides for sudden link changes.
@@ -397,7 +402,7 @@ services:
 
 ### 8.3 Recommended Project Structure
 
-```
+```text
 quantum-hybrid-protocol/
 ├── src/
 │   ├── python/           # Research utilities
@@ -489,7 +494,8 @@ class HybridKEM(KeyEncapsulation): ...  # Combines both
 | Humidity / dust | Optical loss, contamination | Sealed optics, filtration, periodic cleaning |
 | Power instability | Clock drift, thermal spikes | UPS, local storage, power conditioning |
 
-**Site planning**
+### Site planning
+
 - Hot regions: cooling plants or containerized micro-sites with high-efficiency heat rejection.
 - Cold regions: heater budgets, cold-start procedures, condensation management.
 - Marine and airborne: pressure-rated housings, corrosion-resistant materials, auto-alignment.
@@ -513,6 +519,7 @@ class HybridKEM(KeyEncapsulation): ...  # Combines both
 ---
 
 **Document Control:**
+
 - Author: Principal Software Engineer
 - Reviewed by: [Pending]
 - Approved by: [Pending]
