@@ -1,5 +1,7 @@
 # Security Policy
 
+> This project is research-grade. No FIPS 140-3 / Common Criteria / ISO 27001 certification has been performed. See [DISCLAIMER.md](DISCLAIMER.md) for the full scope, security caveats, export-control notes, and warranty terms.
+
 ## Reporting a Vulnerability
 
 The Perspectra Fold project takes security seriously. If you discover a security vulnerability, please report it responsibly.
