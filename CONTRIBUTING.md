@@ -186,8 +186,8 @@ If you discover a security vulnerability, please follow our [Security Policy](SE
 
 ## Questions?
 
-- Open a [Discussion](https://github.com/sarastarquant/perspectra-fold/discussions) for questions
-- Open an [Issue](https://github.com/sarastarquant/perspectra-fold/issues) for bugs or feature requests
+- Open a [Discussion](https://github.com/sara-star-quant/perspectra-fold/discussions) for questions
+- Open an [Issue](https://github.com/sara-star-quant/perspectra-fold/issues) for bugs or feature requests
 
 ## License
 
