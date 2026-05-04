@@ -281,7 +281,7 @@ See [Conformance Suite](02-conformance-suite.md) for interoperability testing an
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
+Contributions are welcome! Please see [CONTRIBUTING.md](../../CONTRIBUTING.md) for guidelines.
 
 ## IP and Publication Sequencing
 

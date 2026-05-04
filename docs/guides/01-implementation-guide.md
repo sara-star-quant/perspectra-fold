@@ -322,8 +322,8 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
 
 ## Contributing
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) for contribution guidelines.
+See [CONTRIBUTING.md](../../CONTRIBUTING.md) for contribution guidelines.
 
 ## License
 
-MIT License - See [LICENSE](../../../LICENSE) for details.
+MIT License - See [LICENSE](../../LICENSE) for details.
