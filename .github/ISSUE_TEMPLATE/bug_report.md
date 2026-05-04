@@ -34,7 +34,7 @@ What actually happened.
 
 ## Logs/Error Output
 
-```
+```text
 Paste relevant logs or error messages here
 ```
 

@@ -111,7 +111,7 @@ make verify-metrics
 
 ### Commit Message Format
 
-```
+```text
 <type>: <short description>
 
 <optional body explaining the change>
@@ -122,7 +122,8 @@ make verify-metrics
 Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 
 Example:
-```
+
+```text
 feat: add UMAP dimensionality reduction support
 
 Implements GPU-accelerated UMAP for high-dimensional data

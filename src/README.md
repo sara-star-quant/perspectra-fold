@@ -10,7 +10,7 @@
 
 Python (research utilities):
 
-```
+```bash
 python -m venv .venv
 . .venv/bin/activate
 pip install -e src/python
@@ -18,19 +18,19 @@ pip install -e src/python
 
 Rust (core crate):
 
-```
+```bash
 cargo test --manifest-path src/rust/mdqc-core/Cargo.toml
 ```
 
 Rust (compute service):
 
-```
+```bash
 MDQC_CORE_ADDR=127.0.0.1:50051 cargo run --manifest-path src/rust/compute-service/Cargo.toml
 ```
 
 Go (control plane):
 
-```
+```bash
 cd src/go/control-plane
 MDQC_CONTROL_DATA_PATH=../../data/control-plane.json \
 MDQC_CORE_ADDR=127.0.0.1:50051 \
@@ -54,7 +54,7 @@ curl -X POST http://127.0.0.1:8080/api/v1/links \
 
 To regenerate Go gRPC stubs from `proto/core_compute.proto`:
 
-```
+```bash
 protoc -I proto \
   --go_out=src/go/control-plane \
   --go_opt=module=github.com/peterz/multidimensional-transformation/control-plane \
@@ -65,6 +65,6 @@ protoc -I proto \
 
 To run the compute service + control plane and fetch metrics in one step:
 
-```
+```bash
 make verify-metrics
 ```
