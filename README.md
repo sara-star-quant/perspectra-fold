@@ -6,15 +6,18 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![Security Policy](https://img.shields.io/badge/security-policy-blue.svg)](SECURITY.md)
+[![Disclaimer](https://img.shields.io/badge/status-research--grade-orange.svg)](DISCLAIMER.md)
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB.svg?logo=python&logoColor=white)](src/python)
 [![Rust](https://img.shields.io/badge/Rust-stable-DEA584.svg?logo=rust&logoColor=white)](src/rust)
 [![Go](https://img.shields.io/badge/Go-1.22+-00ADD8.svg?logo=go&logoColor=white)](src/go)
-[![PQC: FIPS 203/204/205](https://img.shields.io/badge/PQC-FIPS%20203%2F204%2F205-1f6feb.svg)](docs/standards/01-standards-overview.md)
-[![QKD: ETSI GS QKD](https://img.shields.io/badge/QKD-ETSI%20GS%20QKD-1f6feb.svg)](docs/standards/01-standards-overview.md)
+[![PQC algorithms: ML-KEM / ML-DSA / SLH-DSA](https://img.shields.io/badge/PQC%20algorithms-ML--KEM%20%2F%20ML--DSA%20%2F%20SLH--DSA-1f6feb.svg)](docs/standards/01-standards-overview.md)
+[![QKD API target: ETSI GS QKD 014/015](https://img.shields.io/badge/QKD%20API%20target-ETSI%20GS%20QKD%20014%2F015-1f6feb.svg)](docs/standards/01-standards-overview.md)
+
+> **Status: research-grade.** Not FIPS 140-3, Common Criteria, or ISO 27001 certified. Algorithm-standards alignment is not module or system certification. See [DISCLAIMER.md](DISCLAIMER.md) before deployment.
 
 ## Overview
 
-Perspectra Fold provides research findings, architecture documentation, and production-grade implementations for secure communication systems using:
+Perspectra Fold provides research findings, architecture documentation, and reference implementations for secure communication systems using:
 
 - **High-dimensional quantum key distribution (HD-QKD)** - 4D and 8D qudit-based systems
 - **Hybrid quantum-classical networks** - QKD and classical traffic coexistence
@@ -141,17 +144,22 @@ D > 17     → Hierarchical reduction
 | | [Conformance Suite](docs/standards/02-conformance-suite.md) | Interoperability testing |
 | | [Conformance Roadmap](docs/standards/03-conformance-suite-roadmap.md) | Certification pathway |
 
-## Standards Compliance
+## Standards Alignment
 
-This project targets compliance with:
+This project is research-grade. No FIPS 140-3 (CMVP), Common Criteria, ISO 27001, or other formal certification has been performed. The list below distinguishes algorithm-standards alignment (in use today) from validation and certification (roadmap targets, not achieved). See [DISCLAIMER.md](DISCLAIMER.md) for the full statement and [Standards Overview](docs/standards/01-standards-overview.md) for detailed guidance.
 
-- **ETSI QKD** - GS QKD 004, 008, 014, 015, 018
-- **NIST PQC** - FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), FIPS 205 (SLH-DSA)
-- **ISO 27001** - Information Security Management
-- **FIPS 140-3** - Cryptographic Module Validation
-- **Common Criteria** - EAL4+ certification path
+### Algorithm and protocol standards (in use)
 
-See [Standards Overview](docs/standards/01-standards-overview.md) for detailed compliance guidance.
+- **NIST PQC algorithms.** FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), FIPS 205 (SLH-DSA), via established libraries (such as liboqs).
+- **ETSI QKD API surfaces.** GS QKD 004, 008, 014, 015, 018 referenced for interface design.
+
+### Validation and certification (roadmap, not achieved)
+
+- **FIPS 140-3** cryptographic module validation (CMVP). No accredited-lab evaluation, no module identifier.
+- **Common Criteria** EAL4+ path. No security target, evaluation, or certificate.
+- **ISO 27001** information security management. No audit conducted.
+
+Algorithm-standards alignment does not imply module or system certification. Production use requires independent validation, certified hardware (HSMs, validated PRNGs), and audited operational controls.
 
 ## Contributing
 

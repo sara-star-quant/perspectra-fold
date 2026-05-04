@@ -223,7 +223,9 @@ PFOLD-CP = MDQC Compliance Program milestone.
 
 ---
 
-## Global Regulation & Liability (Read Carefully)
+## Global Regulation and Liability (Read Carefully)
+
+> The repository-wide statement is in [DISCLAIMER.md](../../DISCLAIMER.md). The terms below are reproduced here for convenience and apply to use of this repository.
 
 By using, cloning, or forking this repository, you accept and agree to all terms below:
 
