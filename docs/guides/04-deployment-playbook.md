@@ -24,19 +24,23 @@ Define site-selection criteria, operational checklists, and resilience practices
 
 ## Environment Profiles and Strategies
 
-**Hot regions**
+### Hot regions
+
 - High-efficiency cooling plants or containerized cooling nodes.
 - Dust and humidity filtration; sealed optics.
 
-**Polar and extra cold**
+### Polar and extra cold
+
 - Heater budgets, cold-start procedures, and condensation control.
 - Materials qualified for thermal cycling.
 
-**Marine and subsea**
+### Marine and subsea
+
 - Pressure-rated housings and corrosion-resistant materials.
 - Long maintenance cycles with remote diagnostics.
 
-**Airborne and high altitude**
+### Airborne and high altitude
+
 - Vibration isolation, pressure variance tolerance, and auto-alignment.
 - Thermal swings handled by active regulation.
 
@@ -44,28 +48,33 @@ Define site-selection criteria, operational checklists, and resilience practices
 
 ## Operational Checklists
 
-**Pre-Deploy**
+### Pre-Deploy
+
 - Validate site thermal and power profiles.
 - Establish physical security controls.
 - Stage spares and calibration tools.
 - Validate Zero Trust Environment controls and identity enforcement (see [Zero Trust Environment](../architecture/02-zero-trust-environment.md)).
 
-**Install and Commission**
+### Install and Commission
+
 - Verify optical alignment and detector calibration.
 - Run baseline QBER and key rate benchmarks.
 - Record initial conformance traces.
 
-**Operations**
+### Operations
+
 - Continuous monitoring of QBER, SKR, and drift metrics.
 - Scheduled recalibration and alignment checks.
 - Automated failover to classical or PQC-only mode.
 
-**Incident Response**
+### Incident Response
+
 - Trigger thresholds for thermal excursions and link loss.
 - Rapid isolation and rollback procedures.
 - Audit log capture and post-incident review.
 
-**Maintenance**
+### Maintenance
+
 - Periodic cleaning and optical inspection.
 - Firmware and security patch cadence.
 - Spare parts lifecycle planning.
@@ -92,7 +101,8 @@ Define site-selection criteria, operational checklists, and resilience practices
 
 Operational weighting covers loss, latency, and jitter penalties when available.
 
-**Control plane mapping**
+### Control plane mapping
+
 - Set `MDQC_ROUTE_POLICY` to `security-first`, `balanced`, `latency-first`, or `availability-first`.
 - Override thresholds and weights via `MDQC_ROUTE_*` environment variables if needed.
 

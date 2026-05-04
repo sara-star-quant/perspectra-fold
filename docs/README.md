@@ -4,7 +4,7 @@ This directory contains all project documentation organized by category.
 
 ## Structure
 
-```
+```text
 docs/
 ├── research/           # Literature review and analysis
 ├── architecture/       # System design and decisions

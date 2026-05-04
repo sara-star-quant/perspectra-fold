@@ -1,3 +1,4 @@
+<!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
 # Implementation Guide for High-Dimensional Quantum Communication
 
 **Version:** 1.0
@@ -22,7 +23,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
 
 ## Phase Overview
 
-```
+```text
 ╔═══════════════════════════════════════════════════════════════════════╗
 ║              IMPLEMENTATION PHASES                                    ║
 ╠═══════════════════════════════════════════════════════════════════════╣
@@ -39,6 +40,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
 ## Phase 1: Foundation
 
 ### Objectives
+
 - Establish development infrastructure
 - Define system architecture
 - Set up CI/CD pipelines
@@ -63,6 +65,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
    - API specifications
 
 ### Deliverables
+
 - [ ] Git repository with CI/CD
 - [ ] Development environment configuration
 - [ ] Architecture documentation
@@ -73,6 +76,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
 ## Phase 2: Core Development
 
 ### Objectives
+
 - Implement dimensionality reduction pipeline
 - Build cryptographic foundation
 - Develop simulation framework
@@ -80,6 +84,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
 ### Key Activities
 
 1. **Dimensionality Reduction**
+
    ```python
    # Target capabilities
    - 8D → 4D reduction with >95% information retention
@@ -102,6 +107,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
    - Rust compute service exposed via gRPC for control plane integration
 
 ### Deliverables
+
 - [ ] Dimensionality reduction library
 - [ ] Cryptographic primitive library
 - [ ] Quantum simulation framework
@@ -112,6 +118,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
 ## Phase 3: Quantum Layer
 
 ### Objectives
+
 - Implement QKD protocol stack
 - Build high-dimensional encoding
 - Develop error correction
@@ -119,7 +126,8 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
 ### Key Activities
 
 1. **QKD Protocol Stack**
-   ```
+
+   ```text
    L5: Key Management (ETSI QKD 014)
    L4: Privacy Amplification
    L3: Error Correction (LDPC)
@@ -138,6 +146,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
    - Adaptive rate selection
 
 ### Deliverables
+
 - [ ] ETSI QKD 014 compliant API
 - [ ] High-dimensional sifting protocol
 - [ ] Error correction implementation
@@ -148,6 +157,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
 ## Phase 4: Integration
 
 ### Objectives
+
 - Integrate quantum and classical channels
 - Implement SDN orchestration
 - Deploy hybrid security protocols
@@ -155,7 +165,8 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
 ### Key Activities
 
 1. **Coexistence Architecture**
-   ```
+
+   ```text
    Multicore Fiber Layout:
    - Core 1: QKD channel
    - Core 2-3: Classical data
@@ -173,6 +184,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
    - Session management
 
 ### Deliverables
+
 - [ ] Hybrid network prototype
 - [ ] SDN controller with QKD plugin
 - [ ] Fallback mechanism
@@ -183,6 +195,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
 ## Phase 5: Deployment
 
 ### Objectives
+
 - Deploy in controlled environment
 - Validate performance
 - Achieve certifications
@@ -208,6 +221,7 @@ For long-horizon objectives, see [Vision 2026-2075](03-vision-2026-2075.md).
    - SOC 2 Type II
 
 ### Deliverables
+
 - [ ] Operational pilot system
 - [ ] Performance benchmarks
 - [ ] Certification documentation

@@ -52,7 +52,7 @@ Define the Zero Trust posture for Perspectra Fold deployments and explain how Ze
 
 ## Reference Architecture (High Level)
 
-```
+```text
                 +----------------------+
                 |   Policy Control     |
                 | (identity + policy)  |
@@ -95,6 +95,7 @@ This diagram is intentionally high-level and omits enforcement details, key mate
 Reference case: China-South Africa microsatellite QKD link (12,900 km, 2024).
 
 MDQC applicability and compatibility targets:
+
 - Link-agnostic control plane with standardized telemetry and policy gating.
 - Support for high-loss, high-latency links via adaptive routing and local key caching.
 - ETSI-aligned key delivery interface for interoperability with emerging hardware.

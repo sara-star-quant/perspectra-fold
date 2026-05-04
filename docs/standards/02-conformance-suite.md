@@ -30,6 +30,7 @@ Provide a vendor-neutral, repeatable conformance suite that verifies interoperab
 | L2 | Performance and resilience | Carrier-grade deployment readiness |
 
 ZTA/ZTE focus by level:
+
 - **L1**: Identity enforcement, least privilege, segmentation, and policy validation.
 - **L2**: Continuous policy evaluation, telemetry-driven gating, and offline policy resilience.
 

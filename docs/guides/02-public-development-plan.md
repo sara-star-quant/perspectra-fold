@@ -18,22 +18,26 @@
 
 ## $0 GitHub Stack (Public Repo)
 
-**Core**
+### Core
+
 - GitHub repository with branch protection and CODEOWNERS.
 - Issues, Projects, and Discussions for planning and public feedback.
 - Releases and tags for versioned deliverables.
 
-**CI and Automation**
+### CI and Automation
+
 - GitHub Actions for lint, tests, markdown checks, and link validation.
 - CodeQL code scanning (free for public repos).
 - Dependabot for dependency updates.
 - Secret scanning (free for public repos).
 
-**Docs**
+### Docs
+
 - README with linked markdown files (no site required).
 - Optional GitHub Pages for a lightweight landing page.
 
-**Storage**
+### Storage
+
 - Avoid large binaries and datasets in git.
 - Keep artifacts local or in external research storage.
 
@@ -69,28 +73,33 @@ Note: Conformance Phase 4 (registry and long-horizon profiles) is tracked in [Vi
 
 ## Evidence Checklist by Phase (Public)
 
-**Phase 1: Foundation**
+### Phase 1: Foundation
+
 - ADRs for language split and service boundaries.
 - API schema baseline (OpenAPI/protobuf).
 - Initial test vectors for core compute and control endpoints.
 - Zero Trust baseline policy and trust boundary diagram.
 
-**Phase 2: Core Dev**
+### Phase 2: Core Dev
+
 - Golden traces for core workflows.
 - API conformance harness running in CI.
 - Metrics schema and sample datasets.
 
-**Phase 3: Quantum Layer**
+### Phase 3: Quantum Layer
+
 - Security control mappings (FIPS 140-3 and ISO 27001).
 - Hybrid key derivation evidence and negative tests.
 - Incident response and audit log procedures.
 
-**Phase 4: Integration**
+### Phase 4: Integration
+
 - Interop report template and sample report.
 - Failure drills and recovery runbooks.
 - Load/latency baselines for routing and key delivery.
 
-**Phase 5: Deployment**
+### Phase 5: Deployment
+
 - L2 conformance report and performance baselines.
 - Regional compliance matrix (targeted).
 - Pilot readiness checklist and risk register.
@@ -99,16 +108,19 @@ Note: Conformance Phase 4 (registry and long-horizon profiles) is tracked in [Vi
 
 ## Optional Paid Alternatives
 
-**GitHub and DevOps**
+### GitHub and DevOps
+
 - GitHub Team or Enterprise for SSO, audit logs, and tighter policy control.
 - Larger or self-hosted runners for GPU or long-running jobs.
 
-**Cloud and Infrastructure**
+### Cloud and Infrastructure
+
 - AWS/GCP/Azure for VPC-based pilots and managed services.
 - Managed KMS/HSM (AWS CloudHSM, Azure Dedicated HSM, GCP Cloud HSM).
 - Container registries with higher storage limits.
 
-**Security and Compliance**
+### Security and Compliance
+
 - Centralized logging (Datadog, Splunk).
 - Compliance automation (Drata, Vanta) for ISO 27001 or SOC 2.
 - Pen testing engagements and formal third-party audits.
@@ -117,18 +129,22 @@ Note: Conformance Phase 4 (registry and long-horizon profiles) is tracked in [Vi
 
 ## Deployment Recommendations by Stage
 
-**Documentation and Research**
+### Documentation and Research
+
 - GitHub only, no runtime deployments.
 
-**Development and Simulation**
+### Development and Simulation
+
 - Local or lab machines with GPU.
 - Optional self-hosted runners for reproducible CI on lab hardware.
 
-**Pilot**
+### Pilot
+
 - On-prem lab with secure VLANs and hardware QKD devices.
 - If cloud is needed, isolate in a single-region VPC with VPN.
 
-**Production**
+### Production
+
 - On-prem or hybrid, with HSM-backed key storage.
 - Centralized logging, change control, and formal incident response.
 
@@ -146,7 +162,8 @@ Note: Conformance Phase 4 (registry and long-horizon profiles) is tracked in [Vi
 
 ## Regional Compliance Guidance (High Level)
 
-**Target sectors (abstract)**
+### Target sectors (abstract)
+
 - Telecom and network infrastructure
 - Finance (requires DSS-PII compliance)
 - Government and defense
