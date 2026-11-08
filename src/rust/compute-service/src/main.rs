@@ -3,6 +3,7 @@ use std::net::SocketAddr;
 use mdqc_core::compute::{cosine_similarity, ComputeError};
 use tonic::{transport::Server, Request, Response, Status};
 
+#[allow(clippy::double_must_use)]
 pub mod corepb {
     tonic::include_proto!("mdqc.core.v1");
 }
