@@ -10,7 +10,7 @@ import (
 	"github.com/peterz/multidimensional-transformation/control-plane/internal/store"
 )
 
-const version = "0.1.0"
+const version = "0.1.1"
 
 func main() {
 	addr := getenv("MDQC_CONTROL_ADDR", ":8080")

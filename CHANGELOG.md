@@ -7,8 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-08
+
+### Security
+
+- Bump grpc to 1.83.1, x/net to 0.55.0, rand to 0.8.6
+
 ### Changed
 
+- Bump protobuf, tokio, hkdf, sha2 and CI actions
+- Require Go 1.26 for the control plane
 - Renamed project from "MDQC" to "Perspectra Fold"
 - Changed license from MIT to Apache 2.0 (patent protection)
 - Updated copyright holder to SARA STAR QUANT LLC
